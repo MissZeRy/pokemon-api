@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-poke {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.search-poke input {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.search-poke button{
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.search-poke p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px 15px;
+  margin-left: 10px;
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.pokemon-list {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card-contenner {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.pokemon-image {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-image img {
+  width: 120px;
+  height: 120px;
+}
+
+.card-details {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-details .id {
+  padding: 5px 15px;
+  font-weight: 600;
+  background: rgb(216, 216, 216);
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-details .name {
+  font-size: 1.2rem;
+  font-weight: 650;
+}
+
+.pokemon-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.type {
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0 50px 0;
+}
+
+.btn-page {
+  padding: 10px 10px;
+}
+
+.page-number {
+  padding: 10px 10px;
+}
+
+
+.bug {
+  background: #a8b820;
+}
+
+.dark {
+  background: #705848;
+}
+
+.dragon {
+  background: #7038f8;
+}
+
+.electric {
+  background: #f8d030;
+}
+
+.flying {
+  background: #a890f0;
+}
+
+.ghost {
+  background: #705898;
+}
+
+.ground {
+  background: #78c850;
+}
+
+.ice {
+  background: #98d8d8;
+}
+
+.normal {
+  background: #a8a878;
+}
+
+.psychic {
+  background: #a040a0;
+}
+
+.rock {
+  background: #b8a038;
+}
+
+.steel {
+  background: #b8b8d0;
+}
+
+.water {
+  background: #6890f0;
+}
+
+.fairy {
+  background: #dea5de;
+}
+
+.grass {
+  background: #78c850;
+}
+
+.poison {
+  background: #a040a0;
+}
+
+.fire {
+  background: #f08030;
+}
+
+.fighting {
+  background: #c03028;
 }
